@@ -1,8 +1,12 @@
-AI Complaint Triage & Semantic Duplicate Detection System
+# AI Complaint Triage & Semantic Duplicate Detection System
+
 A lightweight, local-first production pipeline designed to ingest civic complaints, generate dense text embeddings, and instantly check for semantic duplicates to prevent redundant ticket logging. Built for real-time responsiveness and persistence on local hardware.
 
-Architecture Overview
-Plaintext
+---
+
+## Architecture Overview
+
+```text
 [ Incoming Complaint ] 
        │
        ▼
@@ -33,16 +37,13 @@ Median Latency: ~14.20 ms
 Vector Search Benchmarking: NumPy brute-force inner-product execution averages ~2.13 ms at 50k scale.
 
 How to Run
-Clone and Navigate:
-
+1. Clone and Navigate
 Bash
-git clone https://github.com/<you>/<repo>.git
-cd <repo>
-Install Dependencies:
-
+git clone [https://github.com/Bhumi-dubey-16/Complaint-Triage-Semantic-Duplicate-system.git](https://github.com/Bhumi-dubey-16/Complaint-Triage-Semantic-Duplicate-system.git)
+cd Complaint-Triage-Semantic-Duplicate-system
+2. Install Dependencies
 Bash
 pip install -r requirements.txt
-Launch the Streamlit App:
-
+3. Launch the Streamlit App
 Bash
 streamlit run app.py
